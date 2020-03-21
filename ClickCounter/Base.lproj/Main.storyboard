@@ -22,13 +22,6 @@
                                     <action selector="addCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAY-T8-8fg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byz-Yw-6fV">
-                                <rect key="frame" x="176" y="498" width="62" height="30"/>
-                                <state key="normal" title="RESET"/>
-                                <connections>
-                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOY-MI-6aY"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-rO-bBO">
                                 <rect key="frame" x="202" y="394" width="10.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,6 +34,16 @@
                                 <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byz-Yw-6fV">
+                                <rect key="frame" x="146" y="498" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BlC-Zt-Wrz"/>
+                                </constraints>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOY-MI-6aY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -49,7 +52,7 @@
                             <constraint firstItem="RkD-Oy-kbo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NZq-JQ-4Nt"/>
                             <constraint firstItem="RkD-Oy-kbo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="QKL-VW-JJs"/>
                             <constraint firstItem="byz-Yw-6fV" firstAttribute="centerX" secondItem="RkD-Oy-kbo" secondAttribute="centerX" id="UaM-fm-OuF"/>
-                            <constraint firstItem="byz-Yw-6fV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="YUn-tk-ajT"/>
+                            <constraint firstItem="byz-Yw-6fV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="YUn-tk-ajT"/>
                             <constraint firstItem="byz-Yw-6fV" firstAttribute="top" secondItem="RkD-Oy-kbo" secondAttribute="bottom" constant="30" id="ZXC-Dg-2aP"/>
                             <constraint firstItem="KyD-Y0-Dze" firstAttribute="centerX" secondItem="e7X-rO-bBO" secondAttribute="centerX" id="b6e-Bv-aIU"/>
                             <constraint firstItem="RkD-Oy-kbo" firstAttribute="top" secondItem="e7X-rO-bBO" secondAttribute="bottom" constant="23" id="h1q-oL-vX2"/>
